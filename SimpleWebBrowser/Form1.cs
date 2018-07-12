@@ -10,14 +10,16 @@ namespace SimpleWebBrowser
         public Form1()
         {
             InitializeComponent();
-            path.Text = "http://127.0.0.1:8080/test.html";
+            //path.Text = "http://127.0.0.1:8080/test.html";
+            path.Text = @"C:\Users\IEUser\Desktop\test.html";
             gTimer.Interval = 1000;
             gTimer.Elapsed += new ElapsedEventHandler(Run_Tester);
         }
 
         private void Run_Tester(object sender, EventArgs e)
         {
-            wb.Navigate(new Uri(path.Text));
+            wb.Refresh();
+            wb.Navigate(path.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)

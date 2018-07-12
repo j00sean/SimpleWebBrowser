@@ -31,6 +31,7 @@
             this.wb = new System.Windows.Forms.WebBrowser();
             this.button1 = new System.Windows.Forms.Button();
             this.path = new System.Windows.Forms.TextBox();
+            this.txt_b = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // wb
@@ -62,6 +63,14 @@
             this.path.Size = new System.Drawing.Size(616, 26);
             this.path.TabIndex = 2;
             // 
+            // txt_b
+            // 
+            this.txt_b.Location = new System.Drawing.Point(652, 417);
+            this.txt_b.Name = "txt_b";
+            this.txt_b.Size = new System.Drawing.Size(25, 20);
+            this.txt_b.TabIndex = 3;
+            this.txt_b.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -82,6 +91,7 @@
         private System.Windows.Forms.WebBrowser wb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox path;
+        private System.Windows.Forms.TextBox txt_b;
     }
 }
 

@@ -18,6 +18,9 @@ namespace SimpleWebBrowser
 
         private void Run_Tester(object sender, EventArgs e)
         {
+            this.Invoke((MethodInvoker)delegate {
+               txt_b.Text = "";
+            });
             wb.Refresh();
             wb.Navigate(path.Text);
         }
